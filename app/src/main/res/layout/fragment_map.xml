@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/arkaplan"
+    tools:context=".fragment.GecisFragment">
+
+
+    <com.mapbox.mapboxsdk.maps.MapView
+        android:id="@+id/mapView2"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </com.mapbox.mapboxsdk.maps.MapView>
+
+    <ImageButton
+        android:id="@+id/ib_zoomRota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@android:drawable/ic_menu_mylocation"
+        app:layout_constraintBottom_toBottomOf="@+id/mapView2"
+        app:layout_constraintEnd_toEndOf="@+id/mapView2" />
+
+    <Button
+        android:id="@+id/btn_navigasyon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Navigasyonu Başlat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_0"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp"
+        android:text="Siradaki Durak : "
+        android:textAlignment="viewStart"
+        android:textColor="#0A0A0A"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mapView2" />
+
+    <TextView
+        android:id="@+id/tv_1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="15dp"
+        android:text="Toplam Nokta Sayisi : "
+        android:textAlignment="viewStart"
+        android:textColor="#0A0A0A"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_0" />
+
+    <TextView
+        android:id="@+id/tv_2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="15dp"
+        android:text="Toplam Kalan Mesafe : "
+        android:textAlignment="viewStart"
+        android:textColor="#0A0A0A"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_1" />
+
+    <TextView
+        android:id="@+id/tv_3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="15dp"
+        android:text="Sıradaki Durağa Mesafe : "
+        android:textAlignment="viewStart"
+        android:textColor="#0A0A0A"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_2" />
+
+
+
+
+
+
+    <TextView
+        android:id="@+id/tv_siradakidurak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#0A0A0A"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_0"
+        app:layout_constraintEnd_toEndOf="@+id/tv_noktaSayisi"
+        app:layout_constraintStart_toEndOf="@+id/tv_0"
+        app:layout_constraintStart_toStartOf="@+id/tv_toplamMesafe" />
+
+    <TextView
+        android:id="@+id/tv_noktaSayisi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#0A0A0A"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_1"
+        app:layout_constraintEnd_toEndOf="@+id/tv_siradakidurak"
+        app:layout_constraintStart_toEndOf="@+id/tv_1"
+        app:layout_constraintStart_toStartOf="@+id/tv_toplamMesafe" />
+
+    <TextView
+        android:id="@+id/tv_toplamMesafe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#0A0A0A"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_2"
+        app:layout_constraintEnd_toEndOf="@+id/tv_siradakiMesafe"
+        app:layout_constraintStart_toEndOf="@+id/tv_2"
+        app:layout_constraintStart_toStartOf="@+id/tv_siradakiMesafe" />
+
+    <TextView
+        android:id="@+id/tv_siradakiMesafe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#0A0A0A"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

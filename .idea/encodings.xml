@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/app/build.gradle" charset="windows-1254" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/guide/tezproject/MainActivity.java" charset="windows-1254" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/guide/tezproject/api/callback/SearchCityCallback.java" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/guide/tezproject/apimapbox/DistanceService.java" charset="windows-1254" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/guide/tezproject/apimapbox/DistanceServiceCallback.java" charset="windows-1254" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/guide/tezproject/apimapbox/MatrixService.java" charset="windows-1254" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/guide/tezproject/apimapbox/MatrixServiceCallBack.java" charset="windows-1254" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/guide/tezproject/apimapbox/RouteService.java" charset="windows-1254" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/guide/tezproject/apimapbox/RouteServiceCallback.java" charset="windows-1254" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/guide/tezproject/fragment/GecisFragment.java" charset="windows-1254" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/guide/tezproject/fragment/LocationFragment.java" charset="windows-1254" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/guide/tezproject/fragment/MapFragment.java" charset="windows-1254" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/guide/tezproject/fragment/NavigationFragment.java" charset="windows-1254" />
+    <file url="PROJECT" charset="ISO-8859-1" />
+  </component>
+</project>
